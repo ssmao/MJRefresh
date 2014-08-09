@@ -9,6 +9,7 @@
 #import "UIScrollView+MJRefresh.h"
 #import "MJRefreshHeaderView.h"
 #import "MJRefreshFooterView.h"
+#import "UIView+Extension.h"
 #import <objc/runtime.h>
 
 @interface UIScrollView()
@@ -263,4 +264,15 @@ static char MJRefreshFooterViewKey;
 {
     return self.header.refreshingText;
 }
+
+- (void)setHeaderRefreshBottom:(CGFloat)headerRefreshBottom
+{
+    self.header.y = headerRefreshBottom - self.header.height;
+}
+
+- (CGFloat)headerRefreshBottom
+{
+    return self.header.y + self.header.height;
+}
+
 @end

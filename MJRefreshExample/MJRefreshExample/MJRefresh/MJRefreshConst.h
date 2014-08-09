@@ -30,7 +30,7 @@ extern NSString *const MJRefreshFooterRefreshing;
 extern NSString *const MJRefreshHeaderPullToRefresh;
 extern NSString *const MJRefreshHeaderReleaseToRefresh;
 extern NSString *const MJRefreshHeaderRefreshing;
-extern NSString *const MJRefreshHeaderTimeKey;
+//extern NSString *const MJRefreshHeaderTimeKey;
 
 extern NSString *const MJRefreshContentOffset;
 extern NSString *const MJRefreshContentSize;
